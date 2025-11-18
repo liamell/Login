@@ -46,7 +46,7 @@ fun AppNavigation(viewModel: LoginViewModel = hiltViewModel()) {
                 LoginScreen(
                     viewModel = viewModel,
                     onLoginSuccess = {
-                        // Navegar a pantalla principal si quieres
+
                     },
                     onOpenRegister = { navController.navigate("register") }
                 )
