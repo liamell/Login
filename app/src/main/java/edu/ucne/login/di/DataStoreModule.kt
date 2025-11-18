@@ -9,7 +9,6 @@ import dagger.hilt.components.SingletonComponent
 import edu.ucne.login.data.datastore.TokenDataStore
 import javax.inject.Singleton
 
-
 @Module
 @InstallIn(SingletonComponent::class)
 object DataStoreModule {
