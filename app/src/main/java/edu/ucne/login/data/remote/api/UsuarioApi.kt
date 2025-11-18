@@ -15,7 +15,7 @@ interface UsuarioApi {
     @POST("api/Usuarios")
     suspend fun createUsuario(@Body usuario: UsuarioDto): UsuarioDto
 
-
+//
 //  if server supported login endpoint that returns token
 // @POST("api/Auth/login")
 // suspend fun login(@Body request: LoginRequest): TokenResponse
