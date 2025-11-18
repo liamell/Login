@@ -1,5 +1,4 @@
 package edu.ucne.login.domain.repository
-
 import edu.ucne.login.domain.model.Usuario
 
 
