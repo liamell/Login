@@ -1,5 +1,4 @@
 package edu.ucne.login.di
-
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
