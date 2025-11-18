@@ -20,7 +20,6 @@ class LoginViewModel @Inject constructor(
     private val tokenStore: TokenDataStore
 ) : ViewModel() {
 
-
     private val _uiState = MutableStateFlow(LoginUiState())
     val uiState = _uiState.asStateFlow()
 
@@ -43,7 +42,6 @@ class LoginViewModel @Inject constructor(
                 if (user == null) {
                     _uiState.value = _uiState.value.copy(error = "Credenciales inválidas", isLoading = false)
                 } else {
-// Simulate token creation: here we create a simple token string (in real JWT the server returns it)
                     val token = "token_" + user.usuarioId + "_" + System.currentTimeMillis()
                     tokenStore.saveToken(token, user.usuarioId.toString())
                     _uiState.value = _uiState.value.copy(usuario = user, isLoading = false)
