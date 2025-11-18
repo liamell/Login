@@ -66,7 +66,7 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // Botón de login
+
             Button(
                 onClick = { viewModel.onEvent(LoginEvent.SubmitLogin) },
                 modifier = Modifier
@@ -79,12 +79,12 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Botón para ir a registro
+
             TextButton(onClick = onOpenRegister) {
                 Text("Crear cuenta")
             }
 
-            // Mensaje de error
+
             state.error?.let {
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(it, color = MaterialTheme.colorScheme.error)
