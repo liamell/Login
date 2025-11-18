@@ -7,6 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
+
 class UsuarioRepositoryImpl @Inject constructor(
     private val remote: UsuarioRemoteDataSource
 ) : UsuarioRepository {
