@@ -57,8 +57,8 @@ fun RegisterScreen(
 
         Button(
             onClick = {
-                viewModel.register(user, pass)  // Llama a register del ViewModel
-                onBack()                        // Vuelve al login
+                viewModel.register(user, pass)
+                onBack()
             },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
